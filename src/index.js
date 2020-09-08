@@ -77,3 +77,11 @@ var Color;
     Color["Blue"] = "blue";
 })(Color || (Color = {}));
 console.log(Color.Red);
+// 금지 - compile option : "noImplicitAny": true
+const list = [1, true, 'Anything'];
+// any : 어떤 타입이든, Unknown : 알 수 없는 타입 (any에만 assign 가능)
+let a = 123;
+let u = 123;
+let v1 = a;
+// let v2: number = u;
+let v3 = u;

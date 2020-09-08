@@ -100,3 +100,20 @@ enum Color {
 
 console.log(Color.Red);
 
+// 금지 - compile option : "noImplicitAny": true
+const list: any[] = [1, true, 'Anything'];
+
+// any : 어떤 타입이든, Unknown : 알 수 없는 타입 (any에만 assign 가능)
+let a: any = 123;
+let u: unknown = 123;
+
+let v1: boolean = a;
+// let v2: number = u;
+let v3: any = u;
+
+
+
+
+
+
+
